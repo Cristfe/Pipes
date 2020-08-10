@@ -1,1 +1,12 @@
 <p>{{precio |currency}}</p>
+<p>{{currentDate | date: 'HH:mm.ss MMMM'}}</p>
+<p>{{numero | number: '21.1-2'}}</p>
+<p>{{'hola'|uppercase}}</p>
+<p>{{numAleatorio |percent:'1.2-2'}}</p>
+<p>{{palabras|slice:2:5}}</p>
+
+<ul>
+    <li *ngFor="let palabra of palabras | slice:2:5">
+        {{palabra}}
+    </li>
+</ul>
